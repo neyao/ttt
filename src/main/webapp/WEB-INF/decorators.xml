@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/views/nav">
+	<!-- Ajax Request URL Here -->
+    <excludes>
+    	<pattern>*/ajax/*</pattern>
+    </excludes>
+    
+    <decorator name="admin" page="admin.jsp">
+        <pattern>/admin/*</pattern>
+    </decorator>
+    
+    <decorator name="none" page="none.jsp">
+		<pattern>/*</pattern>
+    </decorator>
+</decorators>
