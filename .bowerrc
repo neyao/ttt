@@ -1,0 +1,8 @@
+{
+	"name": "ttt",
+	"ignore": [
+    		".jshintrc",
+    		"**/*.txt"
+  	],
+	"directory": "src/main/webapp/assets/libs"
+}
