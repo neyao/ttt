@@ -17,8 +17,9 @@
 		<spring-security.version>3.1.3.RELEASE</spring-security.version>
 		<slf4j.version>1.6.1</slf4j.version>
 		<spring-data-jpa.version>1.2.1.RELEASE</spring-data-jpa.version>
-		<eclipselink.version>2.4.1</eclipselink.version>
-		<eclipselink-jpa.version>2.0.0</eclipselink-jpa.version>
+		<!-- <eclipselink.version>2.4.1</eclipselink.version>
+		<eclipselink-jpa.version>2.0.0</eclipselink-jpa.version> -->
+		<hibernate.version>4.3.6.Final</hibernate.version>
 		<profiles.dir>${basedir}/src/main/profiles</profiles.dir>
 	</properties>
 
@@ -103,7 +104,7 @@
 		</dependency>
 
 		<!-- eclipselink -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>eclipselink</artifactId>
 			<version>${eclipselink.version}</version>
@@ -112,7 +113,17 @@
 			<groupId>org.eclipse.persistence</groupId>
 			<artifactId>javax.persistence</artifactId>
 			<version>${eclipselink-jpa.version}</version>
-		</dependency>
+		</dependency> -->
+		 <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
 
 		<dependency>
 			<groupId>opensymphony</groupId>
