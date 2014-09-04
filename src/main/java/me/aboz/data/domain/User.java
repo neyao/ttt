@@ -6,8 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import me.aboz.Const;
+
 @Entity
-@Table(name="T_USER")
+@Table(name=Const.PERSISTENCE_TABLE_PREFIX+"USER")
 public class User {
 	
 	@Id

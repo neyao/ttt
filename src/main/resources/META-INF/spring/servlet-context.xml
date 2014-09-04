@@ -36,4 +36,14 @@
 	<bean name="weixinController" class="me.aboz.ui.controller.WeixinController">
 		<property name="responder" ref="weixinRobot" />
 	</bean>
+	<bean name="dashboardController" class="me.aboz.ui.controller.DashboardController">
+		<property name="dashboardAdminService" ref="dashboardAdminService" />
+		<property name="widgetAdminService" ref="widgetAdminService" />
+		<property name="contentProviders">
+			<list>
+				<bean class="me.aboz.model.dashboard.impl.StaticContentProvider" />
+				<bean class="me.aboz.model.dashboard.impl.HttpContentProvider" />
+			</list>
+		</property>
+	</bean>
 </beans>

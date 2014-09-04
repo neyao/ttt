@@ -11,5 +11,12 @@
 	</bean>
 	<bean name="weixinRobot" class="me.aboz.model.weixin.impl.Robot"></bean>
 	<bean name="weixinEcho" class="me.aboz.model.weixin.impl.Echo"></bean>
+	
+	<bean name="dashboardAdminService" class="me.aboz.model.dashboard.impl.DashboardAdminServiceImpl">
+		<property name="dashboardRepository" ref="dashboardRepository" />
+	</bean>
+	<bean name="widgetAdminService" class="me.aboz.model.dashboard.impl.WidgetAdminServiceImpl">
+		<property name="widgetRepository" ref="widgetRepository" />
+	</bean>
 
 </beans>	
