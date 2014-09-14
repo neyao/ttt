@@ -21,7 +21,7 @@ public class HomeController {
 	@RequestMapping(value={"","/"})
 	public String index(Model model){
 		model.addAttribute("total", this.userAdminService.total());
-		return "note";
+		return "index";
 	}
 	
 	@ResponseBody
